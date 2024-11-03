@@ -1,0 +1,6 @@
+public/
+resources/
+hugo_stats.json
+*.jpg
+layouts/_default/index.searchindex.json
+assets/css/search.css

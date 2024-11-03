@@ -1,0 +1,17 @@
+{
+  "name": "nceu.kaiser.photo",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-css-order": "^2.1.2",
+    "prettier-plugin-go-template": "^0.0.15",
+    "prettier-plugin-organize-attributes": "^1.0.0"
+  },
+  "private": "true",
+  "scripts": {
+    "build": "hugo --gc --minify",
+    "clean": "rm -rf public/",
+    "deploy": "rclone sync --config /notfound --progress --sftp-host server.kaiser.me --sftp-concurrency=128 --sftp-user nico --transfers 16 --checkers 16 public/ :sftp:/srv/www/nceu.kaiser.photo/public",
+    "dev": "hugo server",
+    "predeploy": "npm run build"
+  }
+}

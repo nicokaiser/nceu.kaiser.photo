@@ -1,0 +1,45 @@
+baseURL = "https://nceu.kaiser.photo/"
+copyright = "© Nico Kaiser"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Europe/Dublin"
+timeout = "600s"
+title = "NodeConf EU 2024 Photos"
+
+[params]
+  defaultTheme = "auto"
+  description = "Photos of NodeConf EU Node.js conference, 04-06 November 2024 at Waterford Castle, Ireland."
+  title = "NodeConf EU 2024 Photos"
+  [params.author]
+    name = "Nico Kaiser"
+    email = "nico@kaiser.me"
+  [params.socialIcons]
+    website = "https://kaiser.me/"
+    facebook = "https://www.facebook.com/kaiser.me/"
+    instagram = "https://www.instagram.com/nico"
+    github = "https://github.com/nicokaiser"
+    youtube = "https://www.youtube.com/@kaiserme"
+    linkedin = "https://www.linkedin.com/in/nicokaiser"
+    email = "mailto:nico@kaiser.me"
+
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "Orientation"
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.121.2"
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
