@@ -1,0 +1,11 @@
+{{ with .Site.Menus.links }}
+  <ul class="links">
+    {{ range . }}
+      <li class="link">
+        <a {{ with .Params.rel -}}rel="{{ . }}"{{ end -}} href="{{ .URL }}">
+          {{ .Name }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

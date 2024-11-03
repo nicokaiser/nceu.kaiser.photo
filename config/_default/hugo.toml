@@ -43,3 +43,10 @@ title = "NodeConf EU 2024 Photos"
     min = "0.121.2"
   [[module.imports]]
     path = "github.com/nicokaiser/hugo-theme-gallery/v4"
+
+[menus]
+  [[menus.links]]
+    name = "Nico Kaiser"
+    url = "https://kaiser.me/"
+    [menus.links.params]
+      rel = "me"
