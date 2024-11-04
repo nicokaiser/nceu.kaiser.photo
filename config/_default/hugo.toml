@@ -23,6 +23,8 @@ title = "NodeConf EU 2024 Photos"
     youtube = "https://www.youtube.com/@kaiserme"
     linkedin = "https://www.linkedin.com/in/nicokaiser"
     email = "mailto:nico@kaiser.me"
+  [params.gallery]
+    boxSpacing = 2
 
 [outputs]
   home = ["HTML"]

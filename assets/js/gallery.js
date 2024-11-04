@@ -49,14 +49,3 @@ if (gallery) {
   updateGallery();
   updateGallery();
 }
-
-/*
-const value = new URLSearchParams(window.location.search).get('refresh');
-if (value) {
-  const refresh = parseInt(value, 10);
-  if (refresh > 0) {
-    console.log('Refreshing every ' + refresh + ' seconds');
-    setTimeout(() => window.location.reload(), refresh * 1000);
-  }
-}
-*/
