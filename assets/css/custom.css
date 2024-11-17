@@ -5,12 +5,6 @@
   --text-1-dark: #eee;
 }
 
-section.gallery {
-  margin: 0;
-  padding: 0;
-  max-width: none;
-}
-
 .links {
   display: flex;
   position: fixed;
@@ -69,4 +63,9 @@ body > header {
   padding: 0 24px;
   height: 60px;
   min-height: 60px;
+  margin-bottom: 0;
+}
+
+main > section {
+  margin-bottom: 0;
 }
