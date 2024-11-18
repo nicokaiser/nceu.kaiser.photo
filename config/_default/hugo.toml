@@ -1,6 +1,5 @@
 baseURL = "https://nceu.kaiser.photo/"
 copyright = "© Nico Kaiser"
-defaultContentLanguage = "en"
 disableKinds = ["taxonomy", "term"]
 enableRobotsTXT = true
 languageCode = "en"
