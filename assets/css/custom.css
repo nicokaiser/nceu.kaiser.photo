@@ -18,19 +18,12 @@
 
     a {
       display: block;
-      -webkit-backdrop-filter: blur(20px);
-      -moz-backdrop-filter: blur(20px);
       backdrop-filter: blur(20px);
       transition: background-color 0.1s linear;
       border-radius: 16px;
-      background-position: 8px;
-      background-size: 16px;
-      background-repeat: no-repeat;
       background-color: rgba(200, 200, 200, 0.25);
       width: 32px;
       height: 32px;
-      overflow: hidden;
-      text-indent: 150%;
       white-space: nowrap;
 
       &:hover {
@@ -46,17 +39,10 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 32px;
-        text-decoration: none;
-        text-indent: 0;
         text-transform: uppercase;
       }
     }
   }
-}
-
-body {
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
 }
 
 body > header {
@@ -64,6 +50,7 @@ body > header {
   height: 60px;
   min-height: 60px;
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 main > section {
