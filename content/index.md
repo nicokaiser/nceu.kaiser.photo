@@ -7,4 +7,6 @@ resources:
   - src: 2024-11-06_NodeConfEU_0773.jpg
     params:
       cover: true
+build:
+  publishResources: false
 ---
